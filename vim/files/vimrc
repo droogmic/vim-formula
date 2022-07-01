@@ -42,7 +42,7 @@ let {{ parameter }} = {{ value }}
 {% endif -%}
 {% endmacro -%}
 
-{%- if grains['os'] == 'Arch' -%}
+{%- if grains['os_family'] == 'Arch' -%}
 runtime! archlinux.vim
 {% endif -%}
 
